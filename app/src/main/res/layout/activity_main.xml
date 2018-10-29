@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mad.homeworkgroup20.inclass5.MainActivity">
+
+    <ImageButton
+        android:id="@+id/btnnext"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:contentDescription="@string/btnNext"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gallary"
+        app:layout_constraintVertical_bias="0.111"
+        app:srcCompat="@drawable/next" />
+
+    <ImageButton
+        android:id="@+id/btnprev"
+        android:layout_width="72dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="36dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:drawable/screen_background_light_transparent"
+        android:contentDescription="@string/btnPrev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnnext"
+        app:layout_constraintHorizontal_bias="0.078"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gallary"
+        app:layout_constraintVertical_bias="0.156"
+        app:srcCompat="@drawable/prev" />
+
+    <ImageView
+        android:id="@+id/gallary"
+        android:layout_width="343dp"
+        android:layout_height="321dp"
+        android:layout_marginBottom="92dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:contentDescription="@string/gallary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/screen_background_light_transparent" />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="269dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/keywordHint"
+        android:inputType="textPersonName"
+
+        app:layout_constraintBottom_toTopOf="@+id/gallary"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.222" />
+
+    <Button
+        android:id="@+id/btnGo"
+        android:layout_width="60dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/btnGo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/keyword"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

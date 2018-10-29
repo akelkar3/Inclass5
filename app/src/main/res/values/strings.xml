@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">inclass5</string>
+    <string name="keywordHint" >Search Keyword</string>
+    <string name="btnGo">Go</string>
+    <string name="btnNext">Go</string>
+    <string name="btnPrev">Go</string>
+    <string name="gallary"></string>
+</resources>
